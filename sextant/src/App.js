@@ -1,12 +1,18 @@
+import React, { Component } from 'react';
 import './App.css';
-import Exhibit from'./components/exhibit';
+import Banner from './components/Banner';
+import Exhibit from './components/Exhibit';
 
-function App() {
-  return (
-    <div className="App">
-      <Exhibit/>
-    </div>
-  );
+class App extends Component {
+    render() {
+        return (
+            <div className="App">
+                <Banner bannerText="Sextant" />
+                <Exhibit name="Exhibit A"></Exhibit>
+                <Exhibit name="Exhibit B"></Exhibit>
+            </div>
+        );
+    }
 }
 
 export default App;

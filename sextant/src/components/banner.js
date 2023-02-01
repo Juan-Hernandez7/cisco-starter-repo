@@ -1,10 +1,14 @@
-import '../index.css';
-function Banner(){
-    return(
-        <div className="banner">
-            <h1>Welcome to Sextant</h1>
-        </div>
-    );
+import React, { Component } from 'react';
+import './Banner.css';
+
+class Banner extends Component {
+    render() {
+        return (
+            <div className="Banner">
+                <h1>{this.props.bannerText}</h1>
+            </div>
+        );
+    }
 }
 
 export default Banner;
