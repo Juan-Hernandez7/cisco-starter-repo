@@ -17,7 +17,7 @@ class App extends Component {
                     <IpDisplay url='https://api64.ipify.org?format=json' />
                 </Exhibit>
                 <Exhibit name = "Packet Latency">
-                    <Latency/>
+                    <Latency url = 'ws://localhost:55455'/>
                 </Exhibit>
             </div>
         );

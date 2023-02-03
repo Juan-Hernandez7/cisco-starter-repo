@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 class Latency extends Component{
-    ws = new WebSocket('ws://localhost:55455');
+    ws = new WebSocket(this.props.url);
 
     constructor(props){
         super(props);
